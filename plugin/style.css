@@ -46,14 +46,18 @@ body {
 }
 
 #entry {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .text {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #E0E0F8;
-  margin: 0px;
+  font-style: italic;
+  /* font-family: 'PT Sans', sans-serif; */
+  /* background-color: #E0E0F8; */
+  background-color: #A9BCF5;
   padding-top: 5px;
   padding-bottom: 5px;
+  color: #ffffff;
+  margin-left: 6px;
+  /* margin-right: 3px; */
 }
