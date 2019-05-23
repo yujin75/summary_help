@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summary Help</title>
+       <!-- <script integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+        <script src="jquery-3.1.0.min.js"></script>
+       <script src="popup.js"></script>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+       <style>
+            @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+            #article, #summary {
+                font-size : 20px;
+                padding: 5px;
+                margin: 3px;
+            }
+            #content{
+                display:flex;
+                font-family: 'Arial', sans-serif;
+            }
+            h3 {
+                font-size: 19px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header" style="text-decoration: underline">
+            <div>
+                <img class="logoImg" src="sh_logo.png" style="width:150px;">
+            </div>
+        </div>
+        <div id = "entry">
+            <div id = "content cnt" style="text-align: center;">
+                <form id="textForm" name="textForm">
+                    <div id = "originalText" style="display: inline-block;margin-right: 10px;">
+                        <h3 class="text">Original</h3>
+                        <!-- <form id="textForm" name="textForm"> -->
+                            <div id="result"></div>
+                            <!-- <textarea name="article" id="article" cols="30" rows="15"></textarea> -->
+                            <textarea name="article" id="article" cols="25" rows="8"></textarea>
+                            <!-- <div id="div_btn">
+                                <center><input type="button" id="submit" name="submit" value="summary!!"/></center>
+                            </div> -->
+                    </div>
+                    <div id = "summaryText" style="display: inline-block">
+                        <!--서머리 버튼을 누르면, 옆 텍스트에어리어에 서머리된 내용을 가지고 온다.-->
+                        <h3 class="text">Result</h3>
+                        <!-- <textarea id="summary" type="text" name = "summary-ajax" cols = "30" rows ="15"></textarea> -->
+                        <textarea id="summary" type="text" name = "summary-ajax" cols = "25" rows ="8"></textarea>
+                    </div>
+                    <div style="width:130px;text-align: center;display: inline-block;margin-top: 20px;">
+                    <input type="button" id="submit" name="submit" value="Summary" class="btn btn-outline-primary btn-block"/>
+                    </div>
+                </form>
+            </div>
+            <div id="evaluate"></div>
+            <!-- </form> -->
+        </div>
+        
+        <div class="footer">
+            <div>
+                Is there a problem? Please click
+                <a href="https://forms.gle/J4knJ8CZGgb7XDdKA" target="_blank">Here</a>
+            </div>
+        </div>
+    </body>
+
+</html>
